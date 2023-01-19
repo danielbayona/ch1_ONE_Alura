@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter" rel="stylesheet">
+        
+    </head>
+
+    <body>
+
+        <header>
+            <img class="logo" src="images/Logo.png">
+        </header>
+
+        <main>
+            <section class="entrada">
+                <textarea id="texto-entrada" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div id="informacion1">
+                    <img src="images/bi_exclamation-circle-fill.png" alt="Signo de advertencia"><p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <button id="encriptador" class="botones">Encriptar</button>
+                <button id="desencriptador" class="botones">Desencriptar</button>
+            </section>
+            
+            <section class="salida">
+                <textarea id="resultado" cols="30" rows="10" disabled></textarea>
+                <div id="informacion2">
+                    <p>Ningún mensaje fue encontrado</p>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    
+                </div>
+                <button id="portapapeles" class="botones">Copiar texto</button>
+            </section>
+        </main>
+
+        <footer>
+            <p class="pie-de-pagina">Desarrollado por Daniel Bayona - 2022</p>
+        </footer>
+
+        
+    <script src="script.js"></script>
+    </body>
+
+    
+    
+
+</html>
+

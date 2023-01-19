@@ -1,0 +1,226 @@
+/*Propiedades generales, fondo, estilo de letra */
+body{
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+main{
+    display: flex;
+}
+/* Header - Logo Alura */
+.logo{
+    padding: 40px 0 0 40px;
+}
+/* Propiedades de la caja que recibe el texto */
+
+.entrada{
+    margin-left:240px;
+    margin-bottom: 50px;
+}
+
+textarea{
+    border-style: none;
+    color:#0a3871;
+    text-transform: lowercase;
+
+}
+#texto-entrada {
+    /* fondo y posicion */
+
+    
+    background: #F3F5FC;
+    width: 680px;
+    height:288px;
+    margin:80px 0 0 0;
+    resize: none;
+    /* texto */
+    text-align: left;
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+::placeholder{
+    color:#0a3871;
+}
+/* texto informativo 1 */
+
+#informacion1{
+    /*fondo*/
+    display: flex;
+    text-align: left;
+    width: fit-content;
+
+    
+    margin: 395px 0 16px 0;
+    
+    /*texto*/
+    font-family: 'Inter';
+    font-size: 12px;
+    
+}
+#informacion1 p{
+    margin-left:8px;
+}
+/* Propiedades generales de los botones */
+.botones{
+    /*fondo*/
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    margin: 0 24px 0 0;
+    border-color:#0a3871;
+    background: #d8dfe8;
+    /*texto*/
+    font-family: 'Inter';
+    font-size: 16px;
+    color: #0a3871;
+}
+
+.botones:hover{
+    transform:scale(1.1);
+}
+
+#encriptador{
+    background: #0a3871;
+    color: #ffffff;
+}
+
+/* Propiedades del area de resultados*/
+.salida{
+    border-radius: 32px;
+    background: #ffffff;
+    position: absolute;
+    top:40px;
+    left:1000px;
+    width: 400px;
+    height:944px;
+}
+
+#resultado{
+    /*fondo*/
+    background-image: url(images/Muñeco.png);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:243px;
+    border-style: none;
+    margin:32px;
+    width: 336px;
+    height: 781px;
+    resize: none;
+    /*texto*/
+    font-family: 'Inter';
+    font-size: 24px;
+}
+
+#informacion2{
+    /*fondo*/
+    width: 336px;
+    position: absolute;
+    top:579px;
+    left: 32px;
+    /*texto*/
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#informacion2 p:first-child{
+    margin-bottom:16px;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+}
+
+section p{
+    display: block;
+    text-align: center;    
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#portapapeles{
+    margin:0 32px;
+    visibility:hidden;
+}
+
+footer{
+    background: #0a3871;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    display: flex;
+}
+.pie-de-pagina{
+    
+    color: #ffffff;
+    margin:auto;
+    width: max-content;
+    border: none;
+}
+
+@media screen and (max-width: 480px){
+    main{
+        display: block;
+    }
+    header{
+        width:100%;
+    }
+    .logo{
+        padding: 5%;
+    }
+    .entrada{
+        margin:auto;
+        width: 90%;
+    }
+    
+    #texto-entrada {
+        display: block;
+        width:80%;
+        margin:auto;
+    }
+
+    #informacion1{
+        margin: auto;
+    }
+    #informacion1 img{
+        margin: auto;
+    }
+    .botones{
+        width: 90%;
+        display: block;
+        margin:12px auto;
+    }
+    .salida{
+        display: block;
+        position: unset;
+        width: 90%;
+        height: 50%;
+        margin:64px auto 40px;
+    }
+
+    #resultado{
+        width: 80%;
+        height: 30%;
+        display: block;
+        background-image:none;
+        background: #ffffff;
+        margin:auto;
+    }
+    #informacion2{
+        width: 90%;;
+        margin: auto;
+        position: inherit;
+    }
+    #portapapeles{
+        margin: auto;
+    }
+    footer{
+        margin:auto;
+    }
+
+
+}
